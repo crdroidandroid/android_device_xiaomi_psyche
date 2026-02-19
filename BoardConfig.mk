@@ -16,7 +16,10 @@ TARGET_SCREEN_DENSITY := 440
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := psyche_defconfig
+TARGET_KERNEL_CONFIG := \
+    vendor/kona-perf_defconfig \
+    vendor/xiaomi/sm8250-common.config \
+    vendor/xiaomi/psyche.config
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := psyche
