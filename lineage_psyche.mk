@@ -38,6 +38,5 @@ PRODUCT_MODEL := 2112123AC
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="psyche-user 13 TKQ1.221114.001 V816.0.10.0.TLDCNXM release-keys" \
-    BuildFlavor=psyche-user
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
+BUILD_FINGERPRINT := google/husky_beta/husky:16/BP41.250822.010/14082742:user/release-keys
